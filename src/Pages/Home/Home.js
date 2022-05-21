@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Info from "./Info";
 import MakeAppointment from "./MakeAppointment";
 import Services from "./Services";
+import Testimonials from "./Testimonials";
 import Treatment from "./Treatment";
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
       <Services />
       <Treatment />
       <MakeAppointment />
+      <Testimonials />
     </div>
   );
 }
