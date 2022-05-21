@@ -4,12 +4,12 @@ import PrimaryButton from "../Shared/PrimaryButton";
 
 const Treatment = () => {
   return (
-    <div className="card card-side bg-base-100 mx-48 border-0 mb-32">
+    <div className="card lg:card-side bg-base-100 lg:mx-48 border-0 mb-32 mx-auto ml-10">
       <figure>
         <img className="rounded" src={treatment} alt="Movie" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-5xl">
+        <h2 className="card-title lg:text-5xl text-3xl">
           Exceptional Dental Care, on Your Terms
         </h2>
         <p>

@@ -5,7 +5,7 @@ import PrimaryButton from "../Shared/PrimaryButton";
 const Contact = () => {
   return (
     <section
-      className="text-center py-10"
+      className="text-center py-10 ml-10"
       style={{
         background: `url(${appointment})`,
       }}
@@ -13,10 +13,18 @@ const Contact = () => {
       <h3 className="text-primary">Contact Us</h3>
       <h1 className="text-2xl text-white">Stay connected with us</h1>
       <div className="flex flex-col justify-center items-center gap-3 py-5">
-        <input type="text" placeholder="Email Address" className="w-96 input" />
-        <input type="text" placeholder="Subject Here" className="w-96 input" />
+        <input
+          type="text"
+          placeholder="Email Address"
+          className="lg:w-96 w-72 input"
+        />
+        <input
+          type="text"
+          placeholder="Subject Here"
+          className="lg:w-96 w-72 input"
+        />
         <textarea
-          className="w-96 textarea textarea-bordered"
+          className="lg:w-96 w-72 textarea textarea-bordered"
           placeholder="Bio"
         ></textarea>
         <PrimaryButton>Submit</PrimaryButton>

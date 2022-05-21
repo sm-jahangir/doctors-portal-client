@@ -8,7 +8,7 @@ const Footer = () => {
         backgroundSize: "cover",
       }}
     >
-      <footer className="footer p-10 flex justify-between px-48">
+      <footer className="footer p-10 flex justify-between lg:px-48">
         <div>
           <span className="footer-title">Services</span>
           <a href="/" className="link link-hover">
