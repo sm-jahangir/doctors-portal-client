@@ -1,9 +1,10 @@
 import React from "react";
 import treatment from "../../assets/images/treatment.png";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const Treatment = () => {
   return (
-    <div className="card card-side bg-base-100 mx-48 border-0">
+    <div className="card card-side bg-base-100 mx-48 border-0 mb-32">
       <figure>
         <img className="rounded" src={treatment} alt="Movie" />
       </figure>
@@ -20,7 +21,7 @@ const Treatment = () => {
           page
         </p>
         <div className="card-actions justify-start">
-          <button className="btn btn-primary">GET STARTED</button>
+          <PrimaryButton>Get Started</PrimaryButton>
         </div>
       </div>
     </div>
