@@ -1,12 +1,20 @@
 import { format } from "date-fns";
-import React from "react";
+import React, { useState } from "react";
 
 const BookingModal = ({ treatment, date, setTreatment }) => {
   const { name, slots } = treatment;
+  const [fullName, setFullName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+
   const handleBooking = (event) => {
     event.preventDefault();
     const slot = event.target.slot.value;
-    console.log(name, slot);
+    const fullname = event.target.fullName.value;
+    const phone = event.target.phone.value;
+    const email = event.target.email.value;
+
+    console.log(name, slot, fullname, phone, email);
     setTreatment(null);
   };
   return (
@@ -38,25 +46,27 @@ const BookingModal = ({ treatment, date, setTreatment }) => {
             </select>
             <input
               type="text"
-              name="name"
+              name="fullName"
+              onChange={(e) => setFullName(e.target.value)}
               placeholder="Full Name"
               className="input input-bordered w-full my-2"
             />
             <input
               type="phone"
+              onChange={(e) => setPhone(e.target.value)}
               name="phone"
               placeholder="Phone Number"
               className="input input-bordered w-full my-2"
             />
             <input
               type="email"
+              onChange={(e) => setEmail(e.target.value)}
               name="email"
               placeholder="Email Address"
               className="input input-bordered w-full my-2"
             />
             <input
               type="submit"
-              name="email"
               value="Submit"
               className="input input-bordered w-full my-2 btn btn-secondary text-uppercase text-white"
             />
