@@ -1,9 +1,10 @@
 import React from "react";
+import AppointmentBanner from "./AppointmentBanner";
 
 function Appointment() {
   return (
     <div>
-      <h2>Appointment</h2>
+      <AppointmentBanner />
     </div>
   );
 }
